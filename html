@@ -1,0 +1,107 @@
+body class="bg-black text-white min-h-screen">
+    <div id="app" class="relative">
+        <!-- Navegação -->
+        <nav class="fixed w-full z-50 bg-black/80 backdrop-blur-sm shadow-lg">
+            <div class="container mx-auto px-4 py-4">
+                <div class="flex justify-between items-center">
+                    <a href="#" class="text-3xl font-bold text-white hover:text-gray-300">Portfólio</a>
+                    <div class="hidden md:flex space-x-8">
+                        <a href="#work" class="hover:text-gray-300 transition-colors">Trabalho</a>
+                        <a href="#about" class="hover:text-gray-300 transition-colors">Sobre</a>
+                        <a href="#contact" class="hover:text-gray-300 transition-colors">Contato</a>
+                    </div>
+                    <button @click="toggleMenu" class="md:hidden text-white">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-16 6h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Menu para dispositivos móveis -->
+        <div v-if="mobileMenuOpen" class="menu-overlay fixed inset-0 z-40 md:hidden">
+            <div class="flex flex-col items-center justify-center h-full space-y-8">
+                <a href="#work" @click="toggleMenu" class="text-2xl hover:text-gray-300">Trabalho</a>
+                <a href="#about" @click="toggleMenu" class="text-2xl hover:text-gray-300">Sobre</a>
+                <a href="#contact" @click="toggleMenu" class="text-2xl hover:text-gray-300">Contato</a>
+            </div>
+        </div>
+
+        <!-- Seção Hero -->
+        <section class="h-screen flex items-center justify-center bg-gradient-to-r from-indigo-600 via-purple-600 to-indigo-900">
+            <div class="text-center px-4 animate__animated animate__fadeIn">
+                <h1 class="text-5xl md:text-7xl font-bold mb-6 text-white">Portfólio Criativo</h1>
+                <p class="text-xl md:text-2xl text-gray-400 mb-8">Exibindo trabalhos </p>
+                
+            </div>
+        </section>
+
+        <!-- Seção Sobre -->
+        <section id="about" class="py-20 px-4 bg-black/90">
+            <div class="container mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-6">Sobre Mim</h2>
+                <p class="text-xl text-gray-400 mb-4">Oi, sou Matheus, um desenvolvedor apaixonado, atualmente cursando Ciência da Computação na PUC. Tenho experiência como instrutor de informática e em desenvolvimento front-end.</p>
+                <p class="text-xl text-gray-400 mb-4">Especializo-me em HTML, CSS, JavaScript, Node.js e GitHub. Já trabalhei de forma independente na implementação de páginas web, focando em criar interfaces dinâmicas e responsivas.</p>
+                <p class="text-xl text-gray-400 mb-4">Meu objetivo é continuar crescendo como desenvolvedor e contribuir para projetos inovadores em desenvolvimento web e sistemas back-end.</p>
+            </div>
+        </section>
+
+        
+
+        <section id="work" class="py-20 px-4">
+            <div class="container mx-auto">
+                <h2 class="text-3xl font-bold mb-12 text-center">Trabalhos em Destaque</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                    <!-- Card Original 1 -->
+                    <div v-for="project in projects" :key="project.id" 
+                         class="project-card group relative overflow-hidden rounded-lg cursor-pointer"
+                         @mouseenter="project.hover = true"
+                         @mouseleave="project.hover = false">
+                        <img :src="project.image" :alt="project.title" class="w-full h-64 object-cover rounded-lg transition-all duration-500 ease-in-out">
+                        <div class="absolute inset-0 bg-black/70 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div class="text-center p-4">
+                                <h3 class="text-xl font-bold mb-2 text-white">{{ project.title }}</h3>
+                                <p class="text-gray-300">{{ project.description }}</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    div class="card">
+  <div class="header">My Skills</div>
+  <div class="body">
+    <div class="skill">
+      <div class="skill-name">HTML</div>
+      <div class="skill-level">
+        <div class="skill-percent" style="width: 90%"></div>
+      </div>
+      <div class="skill-percent-number">90%</div>
+    </div>
+    <div class="skill">
+      <div class="skill-name">CSS</div>
+      <div class="skill-level">
+        <div class="skill-percent" style="width: 80%"></div>
+      </div>
+      <div class="skill-percent-number">80%</div>
+    </div>
+    <div class="skill">
+      <div class="skill-name">JavaScript</div>
+      <div class="skill-level">
+        <div class="skill-percent" style="width: 75%"></div>
+      </div>
+      <div class="skill-percent-number">75%</div>
+    </div>
+  </div>
+</div>
+
+                    
+
+        <!-- Seção Contato -->
+        <section id="contact" class="py-20 px-4 bg-black/80">
+            <div class="container mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-6">Contato</h2>
+                <p class="text-xl text-gray-400 mb-6">Adoraria ouvir de você! Fique à vontade para entrar em contato via e-mail ou se conectar comigo pelo LinkedIn ou GitHub.</p>
+                <a href="mailto:seu-email@exemplo.com" class="btn-primary">Envie um E-mail</a>
+            </div>
+        </section>
+    </div>
