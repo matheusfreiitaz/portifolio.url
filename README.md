@@ -28,7 +28,8 @@ Node.js	75%
 Git	85%
 Tailwind CSS	80%
 Express.js	70%
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/2d1f45b9-ca21-4cbc-99ce-2f05f7589ae2)
+
 
 Funcionalidades do Portfólio
 Seção Hero com texto animado e chamada para ação (call to action).
