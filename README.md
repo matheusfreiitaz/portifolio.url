@@ -1,39 +1,71 @@
-🧪 Teste do Projeto
-Para garantir que o portfólio está funcionando corretamente, siga os testes abaixo:
+Portfólio Moderno - Matheus Freitas
+Bem-vindo ao meu portfólio pessoal! Aqui você encontra um site moderno e responsivo que apresenta minhas habilidades, tecnologias que domino e projetos desenvolvidos.
 
-✅ Testes manuais
-Carregamento da Página
+Sobre o Projeto
+Este portfólio foi desenvolvido com foco em uma experiência visual elegante, interativa e atual, utilizando:
 
-Acesse o link do portfólio.
+HTML5, CSS3 e JavaScript para estrutura, estilo e comportamento.
 
-Verifique se a página carrega sem erros no console do navegador.
+React para demonstração de domínio (embora neste arquivo seja estático, React é uma das tecnologias que uso).
 
-Responsividade
+Animações suaves com a biblioteca AOS (Animate On Scroll).
 
-Abra o site em diferentes tamanhos de tela (desktop, tablet, celular).
+Efeito de partículas dinâmicas com particles.js para um background atraente.
 
-Confirme se os elementos se ajustam corretamente sem sobreposição.
+Cursor personalizado para uma interação diferenciada.
 
-Links de Navegação
+Design responsivo que se adapta a diferentes tamanhos de tela.
 
-Clique nos links do menu (ex: Sobre, Projetos, Contato).
+Uso de ícones da Font Awesome para representar tecnologias.
 
-Verifique se cada link direciona para a seção correta.
+Tecnologias e Skills
+Tecnologia	Nível
+React	90%
+HTML5	95%
+CSS3	90%
+JavaScript	85%
+Node.js	75%
+Git	85%
+Tailwind CSS	80%
+Express.js	70%
 
-Botões e Interações
+Funcionalidades do Portfólio
+Seção Hero com texto animado e chamada para ação (call to action).
 
-Teste botões (ex: "Ver Projeto", "Baixar CV").
+Cards 3D que reagem ao hover mostrando as tecnologias.
 
-Eles devem funcionar conforme esperado.
+Seção de projetos com cards que aumentam de tamanho e exibem sobreposição ao passar o mouse.
 
-Acessibilidade
+Navegação fixa e moderna com efeitos de scroll.
 
-Use Tab para navegar pelos elementos da interface.
+Cursor customizado para melhorar a experiência do usuário.
 
-Certifique-se de que os itens são acessíveis via teclado.
+Efeito de partículas interativas no background.
 
-Performance
+Como usar
+Você pode clonar este repositório para visualizar o portfólio localmente:
 
-Use a ferramenta Lighthouse no Chrome DevTools.
+bash
+Copiar
+Editar
+git clone https://github.com/seu-usuario/seu-repositorio.git
+cd seu-repositorio
+# abra o arquivo index.html no navegador de sua preferência
+Próximos passos e melhorias
+Adicionar integração com backend para contato.
 
-Verifique as métricas de desempenho e acessibilidade.
+Implementar projetos dinâmicos usando React.
+
+Otimizar para SEO e performance.
+
+Incluir modo claro/escuro.
+
+Contato
+Sinta-se à vontade para entrar em contato comigo para feedbacks, oportunidades ou parcerias!
+
+Email: matheus.freiitas77@email.com
+
+LinkedIn: 
+
+GitHub: https://github.com/matheusfreiitaz
+
