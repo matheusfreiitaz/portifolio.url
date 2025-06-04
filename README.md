@@ -1,73 +1,42 @@
-Portfólio Moderno - Matheus Freitas
-Bem-vindo ao meu portfólio pessoal! Aqui você encontra um site moderno e responsivo que apresenta minhas habilidades, tecnologias que domino e projetos desenvolvidos.
+# Portfólio Profissional para Desenvolvedor Web
 
-Sobre o Projeto
-Este portfólio foi desenvolvido com foco em uma experiência visual elegante, interativa e atual, utilizando:
+Portfólio moderno, responsivo e acessível para desenvolvedores web, com design limpo e elegante inspirado em sites como Apple, Stripe e Vercel.
 
-HTML5, CSS3 e JavaScript para estrutura, estilo e comportamento.
+## Recursos
 
-React para demonstração de domínio (embora neste arquivo seja estático, React é uma das tecnologias que uso).
-
-Animações suaves com a biblioteca AOS (Animate On Scroll).
-
-Efeito de partículas dinâmicas com particles.js para um background atraente.
-
-Cursor personalizado para uma interação diferenciada.
-
-Design responsivo que se adapta a diferentes tamanhos de tela.
-
-Uso de ícones da Font Awesome para representar tecnologias.
-
-Tecnologias e Skills
-Tecnologia	Nível
-React	90%
-HTML5	95%
-CSS3	90%
-JavaScript	85%
-Node.js	75%
-Git	85%
-Tailwind CSS	80%
-Express.js	70%
-![image](https://github.com/user-attachments/assets/2d1f45b9-ca21-4cbc-99ce-2f05f7589ae2)
+- Design responsivo para todos os dispositivos
+- Modo claro e escuro
+- Animações suaves
+- Boas práticas de acessibilidade
+- Seções completas: Início, Sobre, Projetos, Habilidades, Experiência e Contato
+- Formulário de contato funcional
+- Navegação suave
+  ![image](https://github.com/user-attachments/assets/749a846e-ae43-4ed5-998c-0ce1a52d6b90)
 
 
-Funcionalidades do Portfólio
-Seção Hero com texto animado e chamada para ação (call to action).
+## Tecnologias Utilizadas
 
-Cards 3D que reagem ao hover mostrando as tecnologias.
+- HTML5 semântico
+- CSS3 moderno (Flexbox, Grid, variáveis CSS)
+- JavaScript (ES6+)
+- Font Awesome para ícones
+- Google Fonts (Inter)
+![image](https://github.com/user-attachments/assets/3a06bd12-22dc-4b91-b850-3131421954f4)
 
-Seção de projetos com cards que aumentam de tamanho e exibem sobreposição ao passar o mouse.
+## Como Usar
 
-Navegação fixa e moderna com efeitos de scroll.
+1. Clone o repositório
+2. Personalize o conteúdo no arquivo `index.html`
+3. Adicione suas próprias imagens na pasta `assets/images/`
+4. Atualize as cores e estilos nos arquivos CSS conforme necessário
+5. Implemente o backend para o formulário de contato se necessário
 
-Cursor customizado para melhorar a experiência do usuário.
+## Personalização
 
-Efeito de partículas interativas no background.
+- Altere as cores editando as variáveis CSS nos arquivos `style.css` e `dark-mode.css`
+- Atualize as informações pessoais, projetos e experiência no HTML
+- Adicione ou remova seções conforme necessário
 
-Como usar
-Você pode clonar este repositório para visualizar o portfólio localmente:
+## Licença
 
-bash
-Copiar
-Editar
-git clone https://github.com/seu-usuario/seu-repositorio.git
-cd seu-repositorio
-# abra o arquivo index.html no navegador de sua preferência
-Próximos passos e melhorias
-Adicionar integração com backend para contato.
-
-Implementar projetos dinâmicos usando React.
-
-Otimizar para SEO e performance.
-
-Incluir modo claro/escuro.
-
-Contato
-Sinta-se à vontade para entrar em contato comigo para feedbacks, oportunidades ou parcerias!
-
-Email: matheus.freiitas77@email.com
-
-LinkedIn: 
-
-GitHub: https://github.com/matheusfreiitaz
-
+Este projeto está licenciado sob a licença MIT - veja o arquivo LICENSE para detalhes.
