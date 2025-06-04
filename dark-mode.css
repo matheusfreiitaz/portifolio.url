@@ -1,0 +1,21 @@
+/* dark-mode.css */
+body {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.header,
+.navbar,
+.footer {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+a {
+  color: #90caf9;
+}
+
+.btn-primary {
+  background-color: #bb86fc;
+  color: #000;
+}
