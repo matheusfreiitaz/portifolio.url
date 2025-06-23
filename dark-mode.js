@@ -1,37 +1,49 @@
-// Versão à prova de falhas
-function initDarkMode() {
-    const toggle = document.querySelector('#dark-mode-toggle');
-    const style = document.querySelector('#dark-mode-style');
+document.addEventListener('DOMContentLoaded', function() {
+    const darkModeToggle = document.getElementById('dark-mode-toggle');
+    const darkModeStyle = document.getElementById('dark-mode-style');
+    const icon = darkModeToggle.querySelector('i');
     
-    if (!style) {
-        console.error('CSS não encontrado - crie o elemento com ID "dark-mode-style"');
-        return;
-    }
-
-    if (!toggle) {
-        console.error('Botão não encontrado - crie o elemento com ID "dark-mode-toggle"');
-        return;
-    }
-
-    // Estado inicial
-    const savedTheme = localStorage.getItem('theme') || 
-                      (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    // Verificar preferência do sistema
+    const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
     
-    style.disabled = savedTheme !== 'dark';
-    toggle.innerHTML = style.disabled ? '<i class="fas fa-moon"></i>' : '<i class="fas fa-sun"></i>';
-
-    // Toggle function
-    toggle.onclick = () => {
-        style.disabled = !style.disabled;
-        localStorage.setItem('theme', style.disabled ? 'light' : 'dark');
-        toggle.innerHTML = style.disabled ? '<i class="fas fa-moon"></i>' : '<i class="fas fa-sun"></i>';
-        console.log('Modo escuro:', style.disabled ? 'OFF' : 'ON');
-    };
-}
-
-// Inicialize quando o DOM estiver pronto
-if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initDarkMode);
-} else {
-    initDarkMode();
-}
+    // Verificar preferência salva ou usar a do sistema
+    const savedMode = localStorage.getItem('darkMode') || (systemPrefersDark ? 'enabled' : 'disabled');
+    
+    if (savedMode === 'enabled') {
+        enableDarkMode();
+    }
+    
+    // Alternar modo escuro
+    darkModeToggle.addEventListener('click', function() {
+        if (darkModeStyle.disabled) {
+            enableDarkMode();
+            localStorage.setItem('darkMode', 'enabled');
+        } else {
+            disableDarkMode();
+            localStorage.setItem('darkMode', 'disabled');
+        }
+    });
+    
+    // Atualizar quando a preferência do sistema mudar
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+        if (localStorage.getItem('darkMode') === null) {
+            if (e.matches) {
+                enableDarkMode();
+            } else {
+                disableDarkMode();
+            }
+        }
+    });
+    
+    function enableDarkMode() {
+        darkModeStyle.disabled = false;
+        icon.classList.replace('fa-moon', 'fa-sun');
+        document.documentElement.setAttribute('data-theme', 'dark');
+    }
+    
+    function disableDarkMode() {
+        darkModeStyle.disabled = true;
+        icon.classList.replace('fa-sun', 'fa-moon');
+        document.documentElement.setAttribute('data-theme', 'light');
+    }
+});
