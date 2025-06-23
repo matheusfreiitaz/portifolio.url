@@ -1,30 +1,65 @@
-// Scroll animations
 document.addEventListener('DOMContentLoaded', () => {
-    const animateOnScroll = () => {
-        const elements = document.querySelectorAll('.section, .project-card, .skill-category, .timeline-item');
-        
-        elements.forEach(element => {
-            const elementPosition = element.getBoundingClientRect().top;
-            const screenPosition = window.innerHeight / 1.2;
-            
-            if (elementPosition < screenPosition) {
-                element.style.opacity = '1';
-                element.style.transform = 'translateY(0)';
+    // Observador de interseção para animações
+    const animateOnScroll = (entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.transform = 'translateY(0)';
+                
+                // Animar cards de projeto em sequência
+                if (entry.target.classList.contains('projects-grid')) {
+                    const cards = entry.target.querySelectorAll('.project-card');
+                    cards.forEach((card, index) => {
+                        setTimeout(() => {
+                            card.style.opacity = '1';
+                            card.style.transform = 'translateY(0)';
+                        }, index * 150);
+                    });
+                }
+                
+                // Animar itens de habilidade em sequência
+                if (entry.target.classList.contains('skills-grid')) {
+                    const items = entry.target.querySelectorAll('.skill-item');
+                    items.forEach((item, index) => {
+                        setTimeout(() => {
+                            item.style.opacity = '1';
+                            item.style.transform = 'translateY(0)';
+                        }, index * 100);
+                    });
+                }
+                
+                // Animar itens da linha do tempo em sequência
+                if (entry.target.classList.contains('timeline')) {
+                    const items = entry.target.querySelectorAll('.timeline-item');
+                    items.forEach((item, index) => {
+                        setTimeout(() => {
+                            item.style.opacity = '1';
+                            item.style.transform = 'translateY(0)';
+                        }, index * 200);
+                    });
+                }
             }
         });
     };
     
-    // Set initial state
-    const animatedElements = document.querySelectorAll('.section, .project-card, .skill-category, .timeline-item');
-    animatedElements.forEach(element => {
-        element.style.opacity = '0';
-        element.style.transform = 'translateY(20px)';
-        element.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+    // Criar observador
+    const observer = new IntersectionObserver(animateOnScroll, {
+        threshold: 0.1
     });
     
-    // Run on load
-    animateOnScroll();
+    // Observar seções
+    document.querySelectorAll('.section, .projects-grid, .skills-grid, .timeline').forEach(section => {
+        observer.observe(section);
+    });
     
-    // Run on scroll
-    window.addEventListener('scroll', animateOnScroll);
+    // Animação de flutuação para a imagem do hero
+    const heroImage = document.querySelector('.hero-image img');
+    if (heroImage) {
+        setInterval(() => {
+            heroImage.style.transform = 'translateY(-10px)';
+            setTimeout(() => {
+                heroImage.style.transform = 'translateY(0)';
+            }, 1000);
+        }, 2000);
+    }
 });
