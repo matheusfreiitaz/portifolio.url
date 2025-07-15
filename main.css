@@ -392,7 +392,7 @@ button {
   transition: var(--transition);
 }
 
-/* ===== HERO SECTION ===== */
+/* ===== SEÇÃO SOBRE ===== */
 .hero {
   padding-top: 7rem;
   min-height: 100vh;
@@ -524,7 +524,7 @@ button {
   transform: rotate(45deg);
 }
 
-/* ===== ABOUT SECTION ===== */
+/* ===== SEÇÃO SOBRE ===== */
 .about-content {
   display: flex;
   gap: var(--space-xl);
@@ -603,7 +603,7 @@ button {
   border-radius: var(--radius);
 }
 
-/* ===== SKILLS SECTION ===== */
+/* ===== SEÇÃO DE HABILIDADES ===== */
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -673,7 +673,7 @@ button {
   transform: scale(1.1);
 }
 
-/* ===== PROJECTS SECTION ===== */
+/* ===== SEÇÃO DE PROJETOS ===== */
 .projects-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
@@ -822,7 +822,7 @@ button {
   margin-top: var(--space-xl);
 }
 
-/* ===== EXPERIENCE SECTION ===== */
+/* ===== SEÇÃO DE EXPERIÊNCIA ===== */
 .timeline {
   position: relative;
   max-width: 840px;
@@ -924,7 +924,7 @@ button {
   margin-top: var(--space-sm);
 }
 
-/* ===== CONTACT SECTION ===== */
+/* ===== SEÇÃO DE CONTATO ===== */
 .contact-content {
   display: flex;
   gap: var(--space-xl);
@@ -1107,7 +1107,7 @@ button {
   z-index: 1;
 }
 
-/* ===== FOOTER ===== */
+/* ===== RODAPÉ ===== */
 .footer {
   background-color: var(--dark-color);
   color: white;
