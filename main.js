@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // ===== LOADER =====
+  // ===== CARREGADOR =====
   const loader = document.querySelector('.loader');
   
   // Esconder loader após 1.5s (simulando carregamento)
@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
     scrollProgress.style.width = `${progress}%`;
   });
 
-  // ===== BACK TO TOP BUTTON =====
+  // ===== BOTÃO VOLTAR AO TOPO =====
   const backToTop = document.querySelector('.back-to-top');
   
   window.addEventListener('scroll', () => {
@@ -86,7 +86,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // ===== ANIMAÇÕES COM INTERSECTION OBSERVER =====
+  // ===== ANIMAÇÕES COM OBSERVADOR DE INTERSEÇÃO =====
   const animateOnScroll = (entries, observer) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -231,7 +231,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 2000);
   }
 
-  // ===== SMOOTH SCROLL PARA LINKS INTERNOS =====
+  // ===== EFEITO DE ROLAGEM SUAVE AO CLICAR EM LINKS INTERNOS =====
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
       e.preventDefault();
