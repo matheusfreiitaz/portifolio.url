@@ -7,7 +7,7 @@ Portfólio moderno, responsivo e acessível para desenvolvedores web, com design
 - Design responsivo para todos os dispositivos
 - Modo claro e escuro
 - Animações suaves
-- Boas práticas de acessibilidade
+- Boas práticas de acessibilidade 
 - Seções completas: Início, Sobre, Projetos, Habilidades, Experiência e Contato
 - Formulário de contato funcional
 - Navegação suave
