@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Criar elemento de mensagem de sucesso
     const successMessage = document.createElement('div');
     successMessage.className = 'success-message';
-    successMessage.style.display = 'none';
+    successMessage.style.display = 'none'; 
     contactForm.parentNode.insertBefore(successMessage, contactForm.nextSibling);
     
     contactForm.addEventListener('submit', async function(e) {
