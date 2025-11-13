@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
     const contactForm = document.getElementById('contact-form');
     
-    if (!contactForm) return;
+    if (!contactForm) return; 
     
     // Criar elemento de mensagem de sucesso
     const successMessage = document.createElement('div');
