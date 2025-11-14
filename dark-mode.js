@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const darkModeToggle = document.getElementById('dark-mode-toggle');
     const darkModeStyle = document.getElementById('dark-mode-style');
     const icon = darkModeToggle.querySelector('i');
-    
+     
     // Verificar preferência do sistema
     const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches; 
     
