@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Atualizar quando a preferência do sistema mudar
     window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
         if (localStorage.getItem('darkMode') === null) {
-            if (e.matches) {
+            if (e.matches) { 
                 enableDarkMode();
             } else {
                 disableDarkMode();
