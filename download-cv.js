@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const link = document.createElement('a');
         link.href = 'assets/images/cv.pdf';
         link.download = 'Matheus_Freitas_Curriculo.pdf';
-        document.body.appendChild(link);
+        document.body.appendChild(link); 
         link.click();
         document.body.removeChild(link);
         
