@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     if (!downloadCvButton) return;
     
     downloadCvButton.addEventListener('click', function(e) {
-        e.preventDefault();
+        e.preventDefault(); 
         
         // Criar link temporário para download
         const link = document.createElement('a'); 
