@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
         e.preventDefault();
         
         // Criar link temporário para download
-        const link = document.createElement('a');
+        const link = document.createElement('a'); 
         link.href = 'assets/images/cv.pdf';
         link.download = 'Matheus_Freitas_Curriculo.pdf';
         document.body.appendChild(link); 
