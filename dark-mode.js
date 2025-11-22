@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     const darkModeToggle = document.getElementById('dark-mode-toggle');
-    const darkModeStyle = document.getElementById('dark-mode-style'); 
+    const darkModeStyle = document.getElementById('dark-mode-style');  
     const icon = darkModeToggle.querySelector('i');
      
     // Verificar preferência do sistema
