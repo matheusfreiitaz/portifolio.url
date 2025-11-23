@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const icon = darkModeToggle.querySelector('i');
       
     // Verificar preferência do sistema
-    const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches; 
+    const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;  
      
     // Verificar preferência salva ou usar a do sistema
     const savedMode = localStorage.getItem('darkMode') || (systemPrefersDark ? 'enabled' : 'disabled');
