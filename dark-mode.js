@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     // Alternar modo escuro
-    darkModeToggle.addEventListener('click', function() {
+    darkModeToggle.addEventListener('click', function() { 
         if (darkModeStyle.disabled) { 
             enableDarkMode();
             localStorage.setItem('darkMode', 'enabled');
