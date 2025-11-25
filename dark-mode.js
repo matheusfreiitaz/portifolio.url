@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const darkModeToggle = document.getElementById('dark-mode-toggle');
+    const darkModeToggle = document.getElementById('dark-mode-toggle'); 
     const darkModeStyle = document.getElementById('dark-mode-style');  
     const icon = darkModeToggle.querySelector('i');
       
