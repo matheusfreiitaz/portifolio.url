@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     const cards = entry.target.querySelectorAll('.project-card');
                     cards.forEach((card, index) => {
                         setTimeout(() => {
-                            card.style.opacity = '1';
+                            card.style.opacity = '1'; 
                             card.style.transform = 'translateY(0)';
                         }, index * 150);
                     });
