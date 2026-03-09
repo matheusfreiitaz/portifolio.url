@@ -7,7 +7,7 @@
   "theme_color": "#3a86ff", 
   "description": "Portfólio profissional de Matheus Freitas, Desenvolvedor Full Stack",
   "icons": [
-    {
+    { 
       "src": "assets/images/icon-192x192.png",
       "sizes": "192x192",
       "type": "image/png"
