@@ -4,7 +4,7 @@
   "start_url": ".",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#3a86ff",
+  "theme_color": "#3a86ff", 
   "description": "Portfólio profissional de Matheus Freitas, Desenvolvedor Full Stack",
   "icons": [
     {
