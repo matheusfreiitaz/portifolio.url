@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 
                 // Animar cards de projeto em sequência
                 if (entry.target.classList.contains('projects-grid')) {
-                    const cards = entry.target.querySelectorAll('.project-card');
+                    const cards = entry.target.querySelectorAll('.project-card'); 
                     cards.forEach((card, index) => {
                         setTimeout(() => {
                             card.style.opacity = '1'; 
