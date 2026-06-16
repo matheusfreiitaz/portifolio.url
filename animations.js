@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const animateOnScroll = (entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.style.opacity = '1';
+                entry.target.style.opacity = '1'; 
                 entry.target.style.transform = 'translateY(0)';
                 
                 // Animar cards de projeto em sequência 
